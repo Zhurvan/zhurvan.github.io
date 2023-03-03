@@ -2,3 +2,4 @@ author: 'Eamin'
 theme: jekyll-theme-minimal
 title: "Stuff"
 description: "Stuff"
+markdown: GFM

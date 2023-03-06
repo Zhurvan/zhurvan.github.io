@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work Sanss&display=swap');
+/*!
+ * Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+ * Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+ * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
+*/
+
+/* Variables */
+@import "minimal-mistakes/variables";
+
+/* Mixins and functions */
+@import "minimal-mistakes/vendor/breakpoint/breakpoint";
+@include breakpoint-set("to ems", true);
+@import "minimal-mistakes/vendor/magnific-popup/magnific-popup"; // Magnific Popup
+@import "minimal-mistakes/vendor/susy/susy";
+@import "minimal-mistakes/mixins";
+
+/* Core CSS */
+@import "minimal-mistakes/reset";
+@import "minimal-mistakes/base";
+@import "minimal-mistakes/forms";
+@import "minimal-mistakes/tables";
+@import "minimal-mistakes/animations";
+
+/* Components */
+@import "minimal-mistakes/buttons";
+@import "minimal-mistakes/notices";
+@import "minimal-mistakes/masthead";
+@import "minimal-mistakes/navigation";
+@import "minimal-mistakes/footer";
+@import "minimal-mistakes/search";
+@import "minimal-mistakes/syntax";
+
+/* Utility classes */
+@import "minimal-mistakes/utilities";
+
+/* Layout specific */
+@import "minimal-mistakes/page";
+@import "minimal-mistakes/archive";
+@import "minimal-mistakes/sidebar";
+@import "minimal-mistakes/print";
+
+/* home page overlay */
+
+.home-page .page__hero--overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+}
+
+.home-page #page-title {
+    font-family: Work Sans, sans-serif;
+    font-size: 10vw;
+    text-shadow: none;
+}
+
+.home-page .wrapper {
+    text-align: center;
+}
+
+.home-page .page__hero--overlay .page__lead {
+    max-width: 100%;
+    font-family: Lato;
+}
+
+.home-page .description-wrapper {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.home-page .description {
+    margin: 10px;
+    max-width: 100%;
+}
+
+.home-page .description-image {
+    max-width: 100%;
+}
+
+/* nav bar */
+
+.sticky-nav .masthead {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 8vh;
+    background-color: #9B4746;
+    border: none;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .5);
+}
+
+.sticky-nav .masthead__inner-wrap {
+    padding: .3em;
+}
+
+.sticky-nav #site-nav {
+    background-color: #9B4746;
+}
+
+.sticky-nav #site-nav .site-title {
+    color: white;
+    font-family: Lato;
+}
+
+.sticky-nav .masthead__menu-item a {
+    color: white;
+    font-family: Lato;
+}
+
+.sticky-nav .greedy-nav .visible-links a:before {
+    background: white;
+}
+
+.sticky-nav .navicon,
+.sticky-nav .navicon::before,
+.sticky-nav .navicon::after {
+    background: white;
+}
+
+.sticky-nav .close .navicon {
+    background: transparent;
+}
+
+.sticky-nav .close .navicon::before,
+.sticky-nav .close .navicon::after {
+    background: #3d4144;
+}
+
+.sticky-nav .hidden-links {
+    background-color: #9B4746;
+}

@@ -1,9 +1,9 @@
 main:
   - title: "Resources"
-    url: /docs/quick-start-guide/
+    url: /resources/
   - title: "Posts"
-    url: /year-archive/
+    url: /posts/
   - title: "Schedule"
-    url: /collection-archive/
+    url: https://docs.google.com/document/d/12OCcNvyfQVNIW3NhjTf8L-1bUIIWeXGuiKE323Pkl4o/edit?tab=t.0
   - title: "About"
-    url: https://google.com
+    url: /about/

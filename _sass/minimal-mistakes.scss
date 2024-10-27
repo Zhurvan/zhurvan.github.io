@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Work Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work Sanss&display=swap');
 /*!
  * Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
  * Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
@@ -41,13 +41,13 @@
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
 
-/* home page */
+/* home page overlay */
 
 .home-page .page__hero--overlay {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 92vh;
+    height: 100vh;
 }
 
 .home-page #page-title {
@@ -81,6 +81,20 @@
 .home-page .description-image {
     max-width: 100%;
 }
+
+.home-page .description {
+    padding: 50px;
+}
+
+/* default page */
+.about .initial-content, .resources .initial-content {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 20px;
+}
+
 
 /* nav bar */
 

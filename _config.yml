@@ -19,16 +19,17 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Debate@Exeter
-email: your-email@example.com
+email: eahmed@exeter.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Online home for Exeter's two debate clubs: Daniel Webster Debate Society and Exeter Forensics Team.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
